@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claire Mercer – Senior Full-Stack Engineer & Product Designer</title>
+    <meta
+      name="description"
+      content="Explore the portfolio of Claire Mercer, a senior full-stack engineer and UI/UX designer building scalable web platforms, design systems, and developer tools."
+    />
+    <meta name="author" content="Claire Mercer" />
+    <meta
+      name="keywords"
+      content="Claire Mercer, Full-Stack Engineer, Product Designer, TypeScript, React, Design Systems, Software Architecture, Portfolio"
+    />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Claire Mercer" />
+    <meta property="og:title" content="Claire Mercer – Senior Full-Stack Engineer & Product Designer" />
+    <meta
+      property="og:description"
+      content="Explore the portfolio of Claire Mercer, a senior full-stack engineer and UI/UX designer building scalable web platforms, design systems, and developer tools."
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Claire Mercer – Senior Full-Stack Engineer & Product Designer" />
+    <meta
+      name="twitter:description"
+      content="Explore the portfolio of Claire Mercer, a senior full-stack engineer and UI/UX designer building scalable web platforms, design systems, and developer tools."
+    />
+
+    <!-- Typography: Bricolage Grotesque (Display), DM Sans (Body), JetBrains Mono (Tabular Numerals/Dates) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prevent dark-mode flash before hydration -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('portfolio-theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Claire Mercer",
+        "jobTitle": "Senior Full-Stack Engineer & Product Designer",
+        "description": "Senior full-stack software engineer and product designer specializing in resilient web platforms, design systems, and developer tools.",
+        "email": "mailto:hello@clairemercer.dev",
+        "sameAs": [
+          "https://github.com/clairemercer",
+          "https://linkedin.com/in/clairemercer",
+          "https://x.com/clairemercer"
+        ],
+        "knowsAbout": [
+          "TypeScript",
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Design Systems",
+          "UI/UX Engineering",
+          "Distributed Systems"
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-zinc-50 text-zinc-950 antialiased selection:bg-blue-600 selection:text-white dark:bg-zinc-950 dark:text-zinc-50 dark:selection:bg-blue-500">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
